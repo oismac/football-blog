@@ -1,0 +1,51 @@
+/* Basic reset - removes default spacing */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body - background and font */
+body {
+    background-color: #1a1a1a;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #2d6a4f;
+    padding: 20px;
+}
+
+/* Nav */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
