@@ -13,10 +13,27 @@ body {
 
 /* Header */
 header {
-    background-color: #2d6a4f;
-    padding: 20px;
+    background-image: url(../images/crowdView.jpg);
+    background-size: cover; /* stretches image to fill the header*/
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    padding: 10px;
 }
 
+header h1{
+    color: white;
+    text-shadow: 3px 3px 10px black; /*Horizontal, Vetical, Blur amount, Colour*/
+}
+
+a{
+    color: limegreen;
+    text-decoration:underline ;
+}
+
+a:hover{
+    color: white;
+}
 /* Nav */
 nav {
     background-color: #333;
@@ -48,6 +65,8 @@ article{
     margin-bottom: 70px ; 
     padding-right: 50px;
 }
+
+
 
 /* Footer */
 footer {
