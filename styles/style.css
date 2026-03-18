@@ -26,15 +26,16 @@ header h1{
     text-shadow: 3px 3px 10px black; /*Horizontal, Vetical, Blur amount, Colour*/
 }
 
+
 a{
-    color: limegreen;
+    color: limegreen; /*colour of the links*/
     text-decoration:underline ;
 }
 
 a:hover{
-    color: white;
+    color: white; /*makes the links go white when hovered over*/
 }
-/* Nav */
+
 nav {
     background-color: #333;
     padding: 10px;
@@ -66,9 +67,15 @@ article{
     padding-right: 50px;
 }
 
+aside{
+    float: right;
+    width: 250px;
+    padding: 20px;
+    background-color: grey;
+}
 
 
-/* Footer */
+
 footer {
     background-color: #333;
     color: white;
