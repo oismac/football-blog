@@ -74,6 +74,21 @@ aside{
     background-color: grey;
 }
 
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid white;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #2d6a4f;
+}
 
 
 footer {
