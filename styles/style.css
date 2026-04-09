@@ -18,12 +18,32 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     height: 200px;
-    padding: 10px; 
+    padding: 20px;
+    display: flex; 
+    align-items: center;
 }
 
 header h1{
     color: white;
     text-shadow: 3px 3px 10px black; /*Horizontal, Vetical, Blur amount, Colour*/
+    font-size: 2.5em;
+}
+
+section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #4ade80;
 }
 
 
@@ -63,15 +83,21 @@ main {
 
 article{
     margin-top: 40px;
-    margin-bottom: 70px ; 
+    margin-bottom: 40px ; 
     padding-right: 50px;
+    overflow: hidden; /* Ensures content doesn't overflow when using floats */
 }
 
 aside{
     float: right;
-    width: 250px;
-    padding: 20px;
-    background-color: grey;
+    width: 180px;
+    padding: 16px;
+    background-color: #2a2a2a;
+    border-left: 3px solid #2d6a4f;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 table {
