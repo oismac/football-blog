@@ -220,3 +220,40 @@ form button:hover {
     background-color: limegreen;
     color: black;
 }
+
+/* ID selectors */
+#welcome {
+    background-color: #222;
+    padding: 20px;
+    border-left: 4px solid limegreen;
+    margin-bottom: 30px;
+}
+
+#latest-posts {
+    margin-top: 20px;
+}
+
+#pl-table {
+    margin-top: 20px;
+}
+
+/* Class selectors */
+.highlight {
+    color: limegreen;
+}
+
+.card {
+    background-color: #222;
+    padding: 16px;
+    margin-bottom: 20px;
+    border-left: 3px solid #2d6a4f;
+}
+
+.stat-box {
+    display: inline-block;
+    background-color: #2d6a4f;
+    padding: 10px 20px;
+    margin: 8px;
+    text-align: center;
+}
+
