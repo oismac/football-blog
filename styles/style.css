@@ -101,3 +101,40 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* Active nav link - shows which page you are on */
+nav ul li a.active {
+    color: limegreen;
+    font-weight: bold;
+    border-bottom: 2px solid limegreen;
+}
+
+nav ul li a:hover {
+    color: limegreen;
+}
+
+/* Logo image in header */
+.site-logo {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* Float image left so text wraps around it */
+.float-img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    width: 220px;
+}
+
+/* Unordered content list */
+ul.content-list {
+    padding: 15px;
+    list-style-type: square;
+}
+
+ul.content-list li {
+    margin-bottom: 6px;
+}
