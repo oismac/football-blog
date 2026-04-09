@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Champions League Final 2026 - venue info, stadium map">
+    <meta name="keywords" content="Champions League final, UEFA, stadium, football, 2026">
+    <title>Football Blog - CL Final</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/logo.png" alt="Football Blog Logo" class="site-logo">
+        <h1>Football Blog</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="finals.html" class="active">CL Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ID selector - gives this section a unique dark green background -->
+        <section id="final-info">
+            <h2 class="highlight">Champions League Final 2026</h2>
+            <p>The 2026 UEFA Champions League Final takes place at the Puskás Aréna in Budapest, Hungary.
+                It is one of the most anticipated matches in world football and will be watched by
+                hundreds of millions of fans across the globe.</p>
+
+            <div>
+                <div class="stat-box">
+                    <strong>Date</strong><br>
+                    30 May 2026
+                </div>
+                <div class="stat-box">
+                    <strong>Venue</strong><br>
+                    Puskás Aréna
+                </div>
+                <div class="stat-box">
+                    <strong>City</strong><br>
+                    Budapest, Hungary
+                </div>
+                <div class="stat-box">
+                    <strong>Capacity</strong><br>
+                    67,000
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="highlight">About the Puskás Aréna</h2>
+            <div class="columns">
+                <p>The Puskás Aréna in Budapest is one of Europe’s most modern and impressive
+                    football stadiums. Named after Hungarian legend Ferenc Puskás, the stadium
+                    combines modern design with a rich footballing heritage.</p>
+
+                <p>As a host venue for the 2026 UEFA Champions League, the stadium continues
+                    to stage some of the biggest matches in European football. With a capacity of
+                    over 65,000, it provides an incredible atmosphere and has already hosted major
+                    finals and international fixtures.</p>
+            </div>
+
+            <!-- Image floated left with text wrapping around it -->
+            <!-- Add a public domain image of the Allianz Arena from Wikimedia Commons -->
+            <img src="images/allianz.jpg" alt="Allianz Arena stadium exterior" class="float-img">
+            <p>The Puskás Aréna is located in Budapest and is easily accessible through
+                public transport, with strong metro and bus connections linking it to the city centre.</p>
+
+            <p>For the 2026 UEFA Champions League, fans are encouraged to arrange accommodation
+                early, as the city is expected to be in high demand during such a major European event.</p>
+
+                <!-- Internal link back to top of page -->
+            <a href="#top">Back to top of page</a>
+        </section>
+
+        <!-- GOOGLE MAPS EMBED - Puskás Aréna, Budapest -->
+        <section>
+            <h2 class="highlight">Stadium Location</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps?q=Pusk%C3%A1s%20Ar%C3%A9na%2C%20Budapest&output=embed"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Puskás Aréna location on Google Maps">
+                </iframe>
+            </div>
+    </section>
+
+        <!-- CONTACT FORM - GET method adds form values to the URL when submitted -->
+        <section>
+            <h2 class="highlight">Get In Touch</h2>
+            <p>Have a question or want to share your thoughts on the final? Fill in the form below.</p>
+
+            <form action="http://foo.com" method="get">
+
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="team">Favourite Team</label>
+                <input type="text" id="team" name="team" placeholder="e.g. Manchester United">
+
+                <label for="prediction">Your Final Prediction <span class="required">*</span></label>
+                <select id="prediction" name="prediction" required>
+                    <option value="">-- Select a winner --</option>
+                    <option value="arsenal">Arsenal</option>
+                    <option value="liverpool">Liverpool</option>
+                    <option value="barcelona">Barcelona</option>
+                    <option value="real-madrid">Real Madrid</option>
+                    <option value="bayern">Bayern Munich</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <p><span class="required">*</span> Required fields</p>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="finals.html">CL Final</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2026 Football Blog. This is a college project completed as part of an assignment.</p>
+    </footer>
+
+</body>
+</html>

@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <title>Football Blog - Blog</title>
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="Football blog posts including match reviews and opinion pieces">
+    <meta name="keywords" content="football, blog, match reviews, Premier League, Champions League">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
+        <img src="images/logo.png" alt="Football Blog Logo" class="site-logo">
         <h1>Football Blog</h1>
     </header>
 
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.html" class="active">Blog</a></li>
             <li><a href="about.html">About</a></li>
+            <li><a href="finals.html">CL Final</a></li>
         </ul>
     </nav>
 
@@ -27,13 +32,16 @@
 
             <article>
                 <h3>Match Review: Champions League</h3>
-                <p>An exciting night of Champions League football as the top clubs in Europe battled it out for a place in the next round.</p>
+                <!-- inline styling example -->
+                <p style="border-left: 3px solid limegreen; padding-left: 8px;">An exciting night of Champions League football as the top clubs in Europe battled it out for a place in the next round.</p>
+                <!-- internal link - jumps to the PL table lower on the page -->
+                <a href="#pl-table">Jump to Premier League Table</a>
+
             </article>
 
             <article>
                 <h3>Opinion: Best Strikers of 2025</h3>
                 <p>A look at the top strikers in world football right now and what makes them stand out from the rest.</p>
-
                 <ol>
                     <li>Erling Haaland</li>
                     <li>Kylian Mbappé</li>
@@ -41,129 +49,132 @@
                     <li>Vinicius Jr</li>
                     <li>Lamine Yamal</li>
                 </ol>
-
             </article>
+            
+            <article>
+                <h3>What Makes a Great Striker?</h3>
+                <!-- image floated left so text wraps around it -->
+                <img src="images/striker.jpg" alt="Football striker" class="float-img">
+                <p>Great strikers share a number of key qualities. Clinical finishing is the
+                    obvious one, but movement and positioning are equally important.</p>
+                <!-- unordered list with class selector -->
+                <ul class="content-list">
+                    <li>Clinical finishing in front of goal</li>
+                    <li>Movement and positioning</li>
+                    <li>Link-up play with teammates</li>
+                    <li>Composure under pressure</li>
+                </ul>
+            </article>
+
+        </section>
+
+        <section id="pl-table">
+            <h2>Premier League Table</h2>
+
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                </tr>
+
+                <tr>
+                    <td>Arsenal</td>
+                    <td>31</td>
+                    <td>21</td>
+                    <td>3</td>
+                    <td>70</td>
+                </tr>
+
+                <tr>
+                    <td>Manchester City</td>
+                    <td>30</td>
+                    <td>18</td>
+                    <td>5</td>
+                    <td>61</td>
+                </tr>
+
+                <tr>
+                    <td>Manchester United</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>6</td>
+                    <td>54</td>
+                </tr>
+
+                <tr>
+                    <td>Aston Villa</td>
+                    <td>30</td>
+                    <td>15</td>
+                    <td>9</td>
+                    <td>51</td>
+                </tr>
+
+                <tr>
+                    <td>Liverpool</td>
+                    <td>30</td>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>49</td>
+                </tr>
+            </table>
         </section>
 
         <section>
-            
-            <article>
-                <h3>Premier League Table</h3>
-                <table>
-                    <tr>
-                        <th>Team</th>
-                        <th>Played</th>
-                        <th>Won</th>
-                        <th>Lost</th>
-                        <th>Points</th>
-                    </tr>
+            <h2>Champions League Table</h2>
 
-                    <tr>
-                        <td>Arsenal</td>
-                        <td>31</td>
-                        <td>21</td>
-                        <td>3</td>
-                        <td>70</td>
-                    </tr>
+            <table>
+                <tr>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Won</th>
+                    <th>Lost</th>
+                    <th>Points</th>
+                </tr>
 
-                    <tr>
-                        <td>Manchester City</td>
-                        <td>30</td>
-                        <td>18</td>
-                        <td>5</td>
-                        <td>61</td>
-                    </tr>
+                <tr>
+                    <td>Arsenal</td>
+                    <td>8</td>
+                    <td>8</td>
+                    <td>0</td>
+                    <td>24</td>
+                </tr>
 
-                    <tr>
-                        <td>Manchester United</td>
-                        <td>30</td>
-                        <td>15</td>
-                        <td>6</td>
-                        <td>54</td>
-                    </tr>
+                <tr>
+                    <td>Bayern Munich</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>1</td>
+                    <td>21</td>
+                </tr>
 
-                    <tr>
-                        <td>Aston Villa</td>
-                        <td>30</td>
-                        <td>15</td>
-                        <td>9</td>
-                        <td>51</td>
-                    </tr>
+                <tr>
+                    <td>Liverpool</td>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>18</td>
+                </tr>
 
-                    <tr>
-                        <td>Liverpool</td>
-                        <td>30</td>
-                        <td>14</td>
-                        <td>7</td>
-                        <td>49</td>
-                    </tr>
-                </table>
-            </article>
+                <tr>
+                    <td>Tottenham</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>17</td>
+                </tr>
 
-            <article>
-                <h3>Champions League Table</h3>
-
-                <table>
-                    <tr>
-                        <th>Team</th>
-                        <th>Played</th>
-                        <th>Won</th>
-                        <th>Lost</th>
-                        <th>Points</th>
-                    </tr>
-
-                    <tr>
-                        <td>Arsenal</td>
-                        <td>8</td>
-                        <td>8</td>
-                        <td>0</td>
-                        <td>24</td>
-                    </tr>
-
-                    <tr>
-                        <td>Bayern Munich</td>
-                        <td>8</td>
-                        <td>7</td>
-                        <td>1</td>
-                        <td>21</td>
-                    </tr>
-
-                    <tr>
-                        <td>Liverpool</td>
-                        <td>8</td>
-                        <td>6</td>
-                        <td>2</td>
-                        <td>18</td>
-                    </tr>
-
-                    <tr>
-                        <td>Tottenham</td>
-                        <td>8</td>
-                        <td>5</td>
-                        <td>1</td>
-                        <td>17</td>
-                    </tr>
-
-                    <tr>
-                        <td>Barcelona</td>
-                        <td>8</td>
-                        <td>5</td>
-                        <td>2</td>
-                        <td>16</td>
-                    </tr>
-                </table>
-            </article>
+                <tr>
+                    <td>Barcelona</td>
+                    <td>8</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>16</td>
+                </tr>
+            </table>
         </section>
-
-        <aside>
-            <h3>Categories</h3>
-            <ul>
-                <li>Match Reviews</li>
-                <li>Player Rankings</li>
-                <li>League Tables</li>
-                <li>Champions League News</li>
-            </ul>
-        </aside>
 
         
         
@@ -175,10 +186,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="finals.html">CL Final</a></li>
             </ul>
         </nav>
-            <p>&copy;This is a college project completed as part of an assignment.</p>
-    </footer> 
+        <p>&copy; 2026 Football Blog. This is a college project completed as part of an assignment.</p>
+    </footer>
 </body>
 
 </html>
