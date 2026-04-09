@@ -8,18 +8,20 @@
     <meta name="keywords" content="football, blog, match reviews, Premier League, Champions League">
     <title>Football Blog - Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
     <header>
+        <img src="images/logo.png" alt="Football Blog Logo" class="site-logo">
         <h1>Football Blog</h1>
         
     </header>
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="finals.html">CL Final</a></li>
@@ -34,18 +36,22 @@
                 <li><a href="about.html">Learn more about this blog</a></li>
             </ul>
         </aside>
-        <section>
+        <section id="welcome">
             <h2 style="color: #4ade80;">Welcome</h2>
             <p>Welcome to my football blog. This is a college project completed as part of an assignment.
             <a href="https://www.bbc.com/sport/football" target="_blank" rel="noopener noreferrer">Visit BBC Sport</a></p>
+            <!-- internal link - jumps down to latest posts on the same page -->
+            <a href="#latest-posts">See latest posts</a>
             
         </section>
 
-        <section>
+        <section id="latest-posts">
             <h2>Latest Posts</h2>
             
             <article>
                 <h3>Match analysis: Atlético Madrid vs Tottenham</h3>
+                 <!-- image floated left so text wraps around it -->
+                <img src="images/match.jpg" alt="Football match action" class="float-img">
                 <p>
                     Tottenham faced Atlético Madrid in an intense battle, with both teams
                     showing strong defensive organisation and quick counter-attacks.
@@ -63,6 +69,31 @@
                 <a href="blog.html">Read more</a>
             </article>
         </section>
+        <section>
+            <h2>Latest News</h2>
+            <!-- columns class splits this into newspaper style layout -->
+            <div class="columns">
+                <p>Arsenal continue their push for the Premier League title after a convincing
+                    win at the Emirates. Bukayo Saka was instrumental with a goal and two assists.</p>
+                <p>Manchester City are struggling for consistency this season but Pep Guardiola
+                    believes his side can still mount a challenge in the Champions League.</p>
+                <p>Liverpool are in excellent form in Europe, progressing to the knockout stages
+                    with games to spare. Check out our <a href="finals.html">CL Final page</a> for
+                    more.</p>
+            </div>
+        </section>
+
+        <!-- embedded YouTube video -->
+        <section>
+            <h2>Watch</h2>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/Ij2QUCFc9Do"
+                    title="Football Highlights"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
     </main>
 
@@ -72,10 +103,10 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="finals.html">CL Final</a></li>
             </ul>
         </nav>
-            <p>&copy;This is a college project completed as part of an assignment.</p>
-        
+        <p>&copy; 2025 Football Blog. This is a college project completed as part of an assignment.</p>
     </footer>
 </body>
 
