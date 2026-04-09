@@ -171,3 +171,52 @@ ul.content-list li {
     height: 400px;
     border: none;
 }
+/* Required field marker on form */
+.required {
+    color: red;
+    margin-left: 3px;
+}
+
+/* Contact form */
+form {
+    margin-top: 20px;
+    max-width: 500px;
+}
+
+form label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    color: limegreen;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    background-color: #2a2a2a;
+    color: white;
+    border: 1px solid #555;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: limegreen;
+    outline: none;
+}
+
+form button {
+    margin-top: 16px;
+    padding: 10px 24px;
+    background-color: #2d6a4f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: limegreen;
+    color: black;
+}
