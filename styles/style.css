@@ -36,7 +36,7 @@ section {
 
 h2 {
     font-size: 1.6em;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: white;
 }
 
@@ -79,6 +79,7 @@ nav ul li a {
 main {
     padding: 20px;
     padding-left: 40px ;
+   
 }
 
 article{
@@ -86,6 +87,20 @@ article{
     margin-bottom: 40px ; 
     padding-right: 50px;
     overflow: hidden; /* Ensures content doesn't overflow when using floats */
+}
+
+article h3 {
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+article a {
+    display: inline-block;
+    margin-top: 5px;
+    color: #4ade80;
 }
 
 aside{
@@ -159,6 +174,8 @@ nav ul li a:hover {
 ul.content-list {
     padding: 15px;
     list-style-type: square;
+    overflow: hidden; /* Ensures content doesn't overflow when using floats */
+    list-style-position: inside; /* Moves bullet points inside the padding area */
 }
 
 ul.content-list li {
@@ -282,7 +299,114 @@ form button:hover {
     margin: 8px;
     text-align: center;
 }
+/* Blog layout */
+.blog-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
 
+.blog-posts {
+    flex: 2;
+}
+
+.blog-posts h2{
+    margin-bottom: 20px;
+}
+
+.blog-posts article {
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-left: 4px solid limegreen;
+    
+}
+
+.blog-posts article h3 {
+    margin-bottom: 10px;
+    color: limegreen;
+}
+
+.blog-posts article p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.blog-posts article ol,
+.blog-posts article ul {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/*right sidebar for recent posts, categories, etc. */
+.blog-sidebar {
+    flex: 1;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-sidebar section {
+    margin-bottom: 30px;
+}
+
+.blog-sidebar h2 {
+    margin-bottom: 15px;
+}
+
+/* Tables */
+.blog-sidebar table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.blog-sidebar th,
+.blog-sidebar td {
+    border: 1px solid #666;
+    padding: 8px;
+    text-align: left;
+}
+
+.blog-sidebar th {
+    background-color: #2d6a4f;
+    color: white;
+}
+
+
+
+.float-image {
+    float: left;
+    width: 160px;
+    margin: 0 15px 10px 0;
+    border-radius: 6px;
+}
+
+.posts-column article {
+    background-color: #222;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #4ade80;
+}
+
+.posts-column h3 {
+    margin-bottom: 8px;
+}
+
+.posts-column p {
+    margin-bottom: 10px;
+}
+
+.tables-column {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+}
 /* Responsive - makes site work on smaller screens */
 @media screen and (max-width: 768px) {
     aside {
