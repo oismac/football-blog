@@ -11,7 +11,7 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body id="top">
 
     <header>
         <img src="images/logo.png" alt="Football Blog Logo" class="site-logo">
@@ -27,63 +27,73 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="final-layout">
 
-        <!-- ID selector - gives this section a unique dark green background -->
-        <section id="final-info">
-            <h2 class="highlight">Champions League Final 2026</h2>
-            <p>The 2026 UEFA Champions League Final takes place at the Puskás Aréna in Budapest, Hungary.
-                It is one of the most anticipated matches in world football and will be watched by
-                hundreds of millions of fans across the globe.</p>
+        <div class="final-main">
+            <section id="final-info" class="content-box">
+                <h2 class="highlight">Champions League Final 2026</h2>
+                <p>
+                    The 2026 UEFA Champions League Final takes place at the Puskás Aréna in Budapest, Hungary.
+                    It is one of the most anticipated matches in world football and will be watched by
+                    hundreds of millions of fans across the globe.
+                </p>
 
-            <div>
-                <div class="stat-box">
-                    <strong>Date</strong><br>
-                    30 May 2026
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <strong>Date</strong><br>
+                        30 May 2026
+                    </div>
+                    <div class="stat-box">
+                        <strong>Venue</strong><br>
+                        Puskás Aréna
+                    </div>
+                    <div class="stat-box">
+                        <strong>City</strong><br>
+                        Budapest, Hungary
+                    </div>
+                    <div class="stat-box">
+                        <strong>Capacity</strong><br>
+                        67,000
+                    </div>
                 </div>
-                <div class="stat-box">
-                    <strong>Venue</strong><br>
-                    Puskás Aréna
+            </section>
+
+            <section class="content-box">
+                <h2 class="highlight">About the Puskás Aréna</h2>
+
+                <div class="columns">
+                    <p>
+                        The Puskás Aréna in Budapest is one of Europe’s most modern and impressive
+                        football stadiums. Named after Hungarian legend Ferenc Puskás, the stadium
+                        combines modern design with a rich footballing heritage.
+                    </p>
+
+                    <p>
+                        As a host venue for the 2026 UEFA Champions League, the stadium continues
+                        to stage some of the biggest matches in European football. With a capacity of
+                        over 65,000, it provides an incredible atmosphere and has already hosted major
+                        finals and international fixtures.
+                    </p>
                 </div>
-                <div class="stat-box">
-                    <strong>City</strong><br>
-                    Budapest, Hungary
-                </div>
-                <div class="stat-box">
-                    <strong>Capacity</strong><br>
-                    67,000
-                </div>
-            </div>
-        </section>
 
-        <section>
-            <h2 class="highlight">About the Puskás Aréna</h2>
-            <div class="columns">
-                <p>The Puskás Aréna in Budapest is one of Europe’s most modern and impressive
-                    football stadiums. Named after Hungarian legend Ferenc Puskás, the stadium
-                    combines modern design with a rich footballing heritage.</p>
+                <img src="images/puskas.jpg" alt="Puskás Aréna stadium exterior" class="float-img">
 
-                <p>As a host venue for the 2026 UEFA Champions League, the stadium continues
-                    to stage some of the biggest matches in European football. With a capacity of
-                    over 65,000, it provides an incredible atmosphere and has already hosted major
-                    finals and international fixtures.</p>
-            </div>
+                <p>
+                    The Puskás Aréna is located in Budapest and is easily accessible through
+                    public transport, with strong metro and bus connections linking it to the city centre.
+                </p>
 
-            <!-- Image floated left with text wrapping around it -->
-            
-            <img src="images/puskas.jpg" alt="Puskás Aréna stadium exterior" class="float-img">
-            <p>The Puskás Aréna is located in Budapest and is easily accessible through
-                public transport, with strong metro and bus connections linking it to the city centre.</p>
+                <p>
+                    For the 2026 UEFA Champions League, fans are encouraged to arrange accommodation
+                    early, as the city is expected to be in high demand during such a major European event.
+                </p>
 
-            <p>For the 2026 UEFA Champions League, fans are encouraged to arrange accommodation
-                early, as the city is expected to be in high demand during such a major European event.</p>
-
-                <!-- Internal link back to top of page -->
-            <a href="#top">Back to top of page</a>
-        </section>
+                <p><a href="#top">Back to top of page</a></p>
+            </section>
+        </div>
 
         <!-- GOOGLE MAPS EMBED - Puskás Aréna, Budapest -->
-        <section>
+        <section class="content-box full-width-section">
             <h2 class="highlight">Stadium Location</h2>
             <div class="map-container">
                 <iframe
@@ -94,43 +104,44 @@
                     title="Puskás Aréna location on Google Maps">
                 </iframe>
             </div>
-    </section>
-
-        <!-- CONTACT FORM - GET method adds form values to the URL when submitted -->
-        <section>
-            <h2 class="highlight">Get In Touch</h2>
-            <p>Have a question or want to share your thoughts on the final? Fill in the form below.</p>
-
-            <form action="http://foo.com" method="get">
-
-                <label for="name">Full Name <span class="required">*</span></label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required>
-
-                <label for="email">Email Address <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                <label for="team">Favourite Team</label>
-                <input type="text" id="team" name="team" placeholder="e.g. Manchester United">
-
-                <label for="prediction">Your Final Prediction <span class="required">*</span></label>
-                <select id="prediction" name="prediction" required>
-                    <option value="">-- Select a winner --</option>
-                    <option value="arsenal">Arsenal</option>
-                    <option value="liverpool">Liverpool</option>
-                    <option value="barcelona">Barcelona</option>
-                    <option value="real-madrid">Real Madrid</option>
-                    <option value="bayern">Bayern Munich</option>
-                    <option value="other">Other</option>
-                </select>
-
-                <label for="message">Your Message <span class="required">*</span></label>
-                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-                <p><span class="required">*</span> Required fields</p>
-
-                <button type="submit">Send Message</button>
-            </form>
         </section>
+    
+
+        <aside class="final-sidebar">
+            <section class="content-box">
+                <h2 class="highlight">Get In Touch</h2>
+                <p>Have a question or want to share your thoughts on the final? Fill in the form below.</p>
+
+                <form action="http://example.com" method="get">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="team">Favourite Team</label>
+                    <input type="text" id="team" name="team" placeholder="e.g. Manchester United">
+
+                    <label for="prediction">Your Final Prediction <span class="required">*</span></label>
+                    <select id="prediction" name="prediction" required>
+                        <option value="">-- Select a winner --</option>
+                        <option value="arsenal">Arsenal</option>
+                        <option value="liverpool">Liverpool</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="real-madrid">Real Madrid</option>
+                        <option value="bayern">Bayern Munich</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="message">Your Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                    <p><span class="required">*</span> Required fields</p>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </aside>
 
     </main>
 

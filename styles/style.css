@@ -7,20 +7,44 @@
 /* Body - background and font */
 body {
     background-color: #1a1a1a;
+    background-image: url("../images/pitch2.jpg"); /* your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#welcome {
+    overflow: hidden;
+}
+
+#welcome aside {
+    float: right;
+    width: 200px;
+    padding: 16px;
+    background-color: #2a2a2a;
+    border-left: 3px solid #2d6a4f;
+    margin-left: 20px;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75 ); /* controls darkness */
+    z-index: -1;
+}
 /* Header */
 header {
-    background-image: url(../images/crowdView.jpg);
-    background-size: cover; /* stretches image to fill the header*/
-    background-repeat: no-repeat;
-    background-position: center;
     height: 200px;
     padding: 20px;
     display: flex; 
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text visibility */
 }
 
 header h1{
@@ -104,9 +128,6 @@ article a {
 }
 
 aside{
-    background-color: #2a2a2a;
-    padding: 16px;
-    border-left: 3px solid #2d6a4f;
     margin-bottom: 20px;
 }
 
@@ -217,6 +238,58 @@ ul.content-list li {
     margin-left: 3px;
 }
 
+/* CL Final page layout */
+.final-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.final-main {
+    flex: 2;
+    min-width: 0;
+}
+
+.final-sidebar {
+    flex: 1;
+    min-width: 300px;
+}
+
+.full-width-section {
+    width: 100%;
+}
+
+.stats-row {
+    margin-top: 15px;
+}
+
+.final-main .float-img {
+    float: left;
+    width: 220px;
+    margin: 0 15px 10px 0;
+    border-radius: 6px;
+}
+
+/* Make stat boxes wrap neatly */
+.stat-box {
+    display: inline-block;
+    background-color: #2d6a4f;
+    padding: 12px 18px;
+    margin: 8px 8px 0 0;
+    text-align: center;
+    border-radius: 6px;
+}
+
+/* Final page form box */
+.final-sidebar .content-box {
+    border-left: 4px solid limegreen;
+}
+
+
 /* Contact form */
 form {
     margin-top: 20px;
@@ -282,13 +355,6 @@ form button:hover {
     border-left: 3px solid #2d6a4f;
 }
 
-.stat-box {
-    display: inline-block;
-    background-color: #2d6a4f;
-    padding: 10px 20px;
-    margin: 8px;
-    text-align: center;
-}
 /* Home page layout */
 .home-layout {
     max-width: 1400px;
@@ -464,7 +530,7 @@ form button:hover {
     padding: 20px;
     border-radius: 10px;
 }
-/* Responsive - makes site work on smaller screens */
+/* Responsive  */
 @media screen and (max-width: 768px) {
     aside {
         float: none;
@@ -492,5 +558,24 @@ form button:hover {
 
     .columns {
         column-count: 1;
+    }
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .final-layout {
+        flex-direction: column;
+    }
+
+    .final-main,
+    .final-sidebar,
+    .full-width-section {
+        width: 100%;
+    }
+
+    .final-main .float-img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        width: 220px;
     }
 }
